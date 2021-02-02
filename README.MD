@@ -29,3 +29,6 @@
       --volume /mnt/disk/dvr/config:/channels-dvr \
       --volume /mnt/disk/dvr/recordings:/shares/DVR \
       ajvolin/channels-dvr:tve-arm64
+
+### Notes
+Add `-e STARTUP_DELAY=10s` to delay the startup of the Channels DVR service by 10 seconds.
