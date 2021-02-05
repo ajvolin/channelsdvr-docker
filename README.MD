@@ -10,6 +10,7 @@
       --device /dev/dri:/dev/dri \
       --volume /mnt/disk/dvr/config:/channels-dvr \
       --volume /mnt/disk/dvr/recordings:/shares/DVR \
+      -e TZ=[Your timezone] `# Optional. Will use UTC time if not set.` \
       ajvolin/channels-dvr:tve
   
 ## Raspberry Pi 4 Hardware Transcoding
@@ -28,6 +29,7 @@
       --device /dev/video16:/dev/video16 \
       --volume /mnt/disk/dvr/config:/channels-dvr \
       --volume /mnt/disk/dvr/recordings:/shares/DVR \
+      -e TZ=[Your timezone] `# Optional. Will use UTC time if not set.` \
       ajvolin/channels-dvr:tve-arm64
 
 ### Notes
